@@ -1,0 +1,38 @@
+#unic-id { /* специфичность 3 */
+    color: blue;
+}
+
+body { /* специфичность 1 */
+    background: aqua;
+}
+
+body div { /* контекстный селектор специфичность 1 + 1 */
+    background: green;
+    width: 200px; /* размер строго ограничен 200 пикселям */
+    height: auto; /* размер подстраивается под контент */
+}
+
+body div > div {
+    background: purple;
+    /*width: 50%; !* размер строго ограничен половине ширины родительского блока *!*/
+    /*width: 1em; !* the same *!*/
+    /*width: 100vw; !* размер view port 100vw === 100% ширины экрана*!*/
+    /*height: 100vh; !* размер view port 100vh === 100% высоты экрана*!*/
+    /*width: 150px; */
+    width: 200px;
+}
+
+body > span > div { /* дочерний селектор специфичность 1 + 1 + 1*/
+    background: #5f848a;
+}
+
+div.red-element{
+    font-size: 20px;
+}
+
+span {
+    background: rgba(0, 0, 255, 0.3);
+    width: 200px;
+    height: 300px;
+    color: hsl(200, 10%, 50%);
+}
