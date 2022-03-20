@@ -7,19 +7,19 @@ body { /* специфичность 1 */
 }
 
 body div { /* контекстный селектор специфичность 1 + 1 */
-    background: green;
-    width: 200px; /* размер строго ограничен 200 пикселям */
-    height: auto; /* размер подстраивается под контент */
+    /*background: green;*/
+    /*width: 200px; !* размер строго ограничен 200 пикселям *!*/
+    /*height: auto; !* размер подстраивается под контент *!*/
 }
 
 body div > div {
-    background: purple;
+    /*background: purple;*/
     /*width: 50%; !* размер строго ограничен половине ширины родительского блока *!*/
     /*width: 1em; !* the same *!*/
     /*width: 100vw; !* размер view port 100vw === 100% ширины экрана*!*/
     /*height: 100vh; !* размер view port 100vh === 100% высоты экрана*!*/
     /*width: 150px; */
-    width: 200px;
+    /*width: 200px;*/
 }
 
 body > span > div { /* дочерний селектор специфичность 1 + 1 + 1*/
@@ -30,9 +30,84 @@ div.red-element{
     font-size: 20px;
 }
 
-span {
-    background: rgba(0, 0, 255, 0.3);
-    width: 200px;
-    height: 300px;
-    color: hsl(200, 10%, 50%);
+section {
+    background: #DEDEDE;
+    height: 1000px;
+    padding: 10px;
+
+    position: relative;
+}
+
+section div {
+    width: 100px;
+    height: 100px;
+    background: red;
+
+}
+
+section div:first-child {
+    background: #7d25d2;
+
+    position: sticky;
+    top: 50px;
+}
+
+section div:nth-child(2) {
+    background: #38A3F1;
+
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+section div:nth-child(5) {
+    background: yellowgreen;
+
+    position: fixed;
+    top: 50px;
+    left: 100px;
+}
+
+section div:nth-child(7) {
+    background: dimgrey;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+section div:nth-child(6) {
+    background: dimgrey;
+    top: 50px;
+    left: 50px;
+}
+
+.modal {
+    position: fixed;
+    height: 250px;
+    width: 400px;
+    top: calc(50vh - (500px / 2));
+    left: calc(50vw - (400px / 2));
+    background: transparent;
+    box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+}
+
+.modal-title {
+    background: transparent;
+    position: relative;
+    width: 100%;
+}
+
+.modal-title h1 {
+    padding-left: 20px;
+}
+
+.modal-title span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.modal .modal-body {
+    padding: 20px;
 }
