@@ -57,9 +57,45 @@ body {
 }
 
 .content__news {
+    display: flex;
     height: 334px;
     background: #939464;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
+
+.content__news_big{
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  background: red;
+}
+
+.content__news_smalls{
+  height: 300px;
+  width: 500px;
+  background: blue;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__news_smalls-item{
+ height: 90px;
+ width: 500px;
+ background: yellow;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.content__news_smalls-item > div{
+ height: 90px;
+ width: 240px;
+ background: orange;
+}
+
 
 .content__reviews {
     height: 800px;
