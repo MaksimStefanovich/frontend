@@ -75,7 +75,6 @@ body {
 .content__news_smalls{
   height: 300px;
   width: 500px;
-  background: blue;
   display: flex;
   flex-direction:column;
   justify-content: space-between;
@@ -84,7 +83,6 @@ body {
 .content__news_smalls-item{
  height: 90px;
  width: 500px;
- background: yellow;
  display: flex;
  justify-content: space-around;
  align-items: center;
