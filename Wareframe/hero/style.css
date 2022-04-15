@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    height: 960px;
+    width: 1680px;
+    background-color: #fff;
+    flex-direction: row-reverse;
+}
+
+.description {
+    width: calc(50% - (77px + 77px));
+    height: calc(100% - (354px + 354px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 354px 77px;
+}
+
+.description button {
+    background: #18A0FB;
+    border-radius: 6px;
+    border: 0;
+    width: 130px;
+    height: 40px;
+    min-height: 40px;
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.description h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 80px;
+}
+
+.banner {
+    width: 50%;
+    height: 100%;
+    background-image: url("./Rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
