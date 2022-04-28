@@ -133,7 +133,7 @@ header button {
 
 
 .container > div{
-    width: calc(50%);
+    width: calc(50% - 42px);
  }
 
  .container div h4{
@@ -164,31 +164,29 @@ p{
     border-radius: 6px;
 }
 
-.sed_block{
+.sed_block {
     display: flex;
-    width: 100%
+    width: calc(100% - 160px);
     height: 600px;
-    lex-direction: row;
-    background: #F5F5F5;
     background: #FFFFFF;
+    padding: 0 80px;
+    justify-content: space-between;
 }
 
-.sed_block > img{
+.sed_block > img {
     height: 440px;
-    padding: 80px 10px 80px 80px;
 /* WHY???????????????????????????????????????????????????? */
-    width: calc(50% - 130px);
-    background: blue;
+    width: calc(50% - 42px);
+    /*background: blue;*/
 }
 
 .sed_block > .text{
      display: flex;
-     padding: 80px 80px 80px 80px;
      height: 440px;
-     width: calc(50% - 160px);
+     width: calc(50% - 42px);
      flex-wrap: wrap;
      align-content: center;
-     background: yellow;
+     /*background: yellow;*/
 }
 
 .sed_block > .text > h4{
@@ -212,51 +210,8 @@ p{
     color: rgba(0, 0, 0, 0.8);
 }
 
-
-.sed_block_reverse{
-    display: flex;
-    width: 100%
-    height: 600px;
-    flex-direction: row;
-    background: #F5F5F5;
-}
-
-.sed_block_reverse > img{
-    height: 440px;
-    padding: 80px 80px 80px 10px;
-    width: 50%;
-    background: blue;
-}
-
-.sed_block_reverse > .text{
-    display: flex;
-    padding: 80px 80px 80px 80px;
-    height: 440px;
-    width: calc(50% - 160px);
-    flex-wrap: wrap;
-    align-content: center;
-    background: yellow;
-}
-
-.sed_block_reverse > .text > h4{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.015em;
-    color: #000000;
-}
-
-.sed_block_reverse > .text > p{
-    margin: 0;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .you{
@@ -265,7 +220,7 @@ p{
     align-items: center;
     justify-content: center;
     height: 738px;
-    width: 100%:
+    width: 100%;
     justify_content: space-around;
     background: #FFFFFF;
 }
@@ -407,10 +362,12 @@ p{
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
-    text-align: right;
+    text-align: center;
     letter-spacing: -0.015em;
     color: #000000;
     padding: 0 20px 0 0;
+    text-decoration: none;
+    width: 100px;
 }
 
 .last_section > .second{

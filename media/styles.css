@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    margin: 0;
+    background-color: #fdfdfd;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 796px;
+    width: 92%;
+    padding: 0 4%;
+}
+
+section h1 {
+    width: 50%;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -0.015em;
+}
+
+section > .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+section > .info > div {
+    width: calc(33% - 10px);
+}
+
+.info img{
+    width: 108px;
+    height: 108px;
+}
+
+.info h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 40px 0 24px 0;
+}
+
+.info .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 24px;
+}
+
+.info a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    text-decoration: none;
+    color: #18A0FB;
+}
+
+
+@media (max-width: 1000px){
+
+    section h1 {
+        width: 100%;
+    }
+
+    section > .info {
+        flex-direction: column;
+    }
+
+    section > .info > div {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
